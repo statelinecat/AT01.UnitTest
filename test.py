@@ -19,6 +19,9 @@ class TestMath(unittest.TestCase):
 
     def test_rem_div(self):
         self.assertEqual(rem_div(9, 7), 2)
+        self.assertEqual(rem_div(12, 4), 0)
+        self.assertEqual(rem_div(11, 4), 3)
+        self.assertEqual(rem_div(48, 7), 6)
 
     def test_rem_div_by_zero(self):
         self.assertRaises(ValueError, rem_div, 9, 0)
